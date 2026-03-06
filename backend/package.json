@@ -1,0 +1,33 @@
+{
+  "name": "document-management-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "API for document management using Fastify, Prisma and PostgreSQL",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "vitest run --reporter=verbose",
+    "test:watch": "vitest --reporter=verbose",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "*",
+    "@prisma/client": "^6.0.0",
+    "dotenv": "*",
+    "fastify": "*"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "prisma": "^6.0.0",
+    "tsx": "*",
+    "typescript": "*",
+    "vitest": "*"
+  }
+}
